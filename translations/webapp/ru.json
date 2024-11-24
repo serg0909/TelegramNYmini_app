@@ -1,0 +1,12 @@
+{
+    "welcome_message": "Привет, %username%!",
+    "game_started_message": "Игра началась, %username%!",
+    "start_game_button": "Начать игру",
+    "game_title": "Гонка на время",
+    "game_instructions": "Используйте стрелки ВЛЕВО и ВПРАВО для управления санями.\nИзбегайте снежинок, чтобы набрать очки!",
+    "game_over": "Игра окончена!",
+    "final_score": "Итоговый счёт: %score%",
+    "play_again": "Играть снова",
+    "back_to_menu": "Вернуться в меню",
+    "current_score": "Счёт: %score%"
+}

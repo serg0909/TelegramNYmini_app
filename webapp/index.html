@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Mini App Game</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: var(--tg-theme-bg-color, #ffffff);
+            color: var(--tg-theme-text-color, #000000);
+        }
+        #gameContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            text-align: center;
+        }
+        #welcomeMessage {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .game-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: var(--tg-theme-button-color, #2481cc);
+            color: var(--tg-theme-button-text-color, #ffffff);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="welcomeMessage"></div>
+        <div id="gameMenu">
+            <h1 id="gameTitle"></h1>
+            <button class="game-button" id="startGameButton"></button>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <div id="score"></div>
+
+    <div id="instructions">
+        <p id="instructionsText"></p>
+        <button class="game-button" id="startButton"></button>
+    </div>
+
+    <div id="gameOverScreen">
+        <h2 id="gameOverTitle"></h2>
+        <p id="finalScore"></p>
+        <button class="game-button" id="playAgainButton"></button>
+        <button class="game-button" id="backToMenuButton"></button>
+    </div>
+
+    <script src="translations.js"></script>
+    <script src="gameEngine.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

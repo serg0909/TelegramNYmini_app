@@ -1,0 +1,12 @@
+{
+    "welcome_message": "Hello, %username%!",
+    "game_started_message": "Game started, %username%!",
+    "start_game_button": "Start Game",
+    "game_title": "Time Race",
+    "game_instructions": "Use LEFT and RIGHT arrow keys to control the sleigh.\nAvoid snowflakes to score points!",
+    "game_over": "Game Over!",
+    "final_score": "Final Score: %score%",
+    "play_again": "Play Again",
+    "back_to_menu": "Back to Menu",
+    "current_score": "Score: %score%"
+}
